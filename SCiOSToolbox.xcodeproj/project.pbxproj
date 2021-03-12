@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B005438B258379C0005D71D4 /* SCiOSToolbox.h */,
-				B05C789825FB469600587FC3 /* Extension */,
+				B05C78FB25FB4D5A00587FC3 /* Extension */,
 				B05C789725FB468700587FC3 /* Factory */,
 				B005438C258379C0005D71D4 /* Info.plist */,
 			);
@@ -100,7 +100,7 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		B05C789825FB469600587FC3 /* Extension */ = {
+		B05C78FB25FB4D5A00587FC3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				B05C789925FB46DE00587FC3 /* UIButton+SCToolExt.swift */,
