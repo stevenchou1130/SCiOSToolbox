@@ -9,28 +9,8 @@ import UIKit
 
 @objc public extension UIButton {
     
-    override var isHighlighted: Bool {
-        get {
-            return super.isHighlighted
-        }
-        set {
-            if newValue {
-                UIView.animate(withDuration: 0.25, delay: 0, options:.curveEaseIn , animations: {
-                    self.alpha = 0.5
-                }, completion: nil)
-            }
-            else {
-                UIView.animate(withDuration: 0.25, delay: 0, options:.curveEaseOut , animations: {
-                    self.alpha = 1
-                }, completion: nil)
-            }
-            
-            super.isHighlighted = newValue
-        }
-    }
-    
     func addHighlightAlphaEffect() {
-        
+        // TODO
     }
     
     func centerTextAndImage(spacing: CGFloat) {
