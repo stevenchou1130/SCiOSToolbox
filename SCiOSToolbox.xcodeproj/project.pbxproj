@@ -11,6 +11,7 @@
 		B0054397258379C0005D71D4 /* SCiOSToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0054396258379C0005D71D4 /* SCiOSToolboxTests.swift */; };
 		B0054399258379C0005D71D4 /* SCiOSToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = B005438B258379C0005D71D4 /* SCiOSToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B03B3D4C259C860A00C877F9 /* SCButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */; };
+		B05C789A25FB46DE00587FC3 /* UIButton+SCToolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C789925FB46DE00587FC3 /* UIButton+SCToolExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		B0054396258379C0005D71D4 /* SCiOSToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCiOSToolboxTests.swift; sourceTree = "<group>"; };
 		B0054398258379C0005D71D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButtonFactory.swift; sourceTree = "<group>"; };
+		B05C789925FB46DE00587FC3 /* UIButton+SCToolExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SCToolExt.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				B005438B258379C0005D71D4 /* SCiOSToolbox.h */,
-				B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */,
+				B05C789825FB469600587FC3 /* Extension */,
+				B05C789725FB468700587FC3 /* Factory */,
 				B005438C258379C0005D71D4 /* Info.plist */,
 			);
 			path = SCiOSToolbox;
@@ -87,6 +90,22 @@
 				B0054398258379C0005D71D4 /* Info.plist */,
 			);
 			path = SCiOSToolboxTests;
+			sourceTree = "<group>";
+		};
+		B05C789725FB468700587FC3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B05C789825FB469600587FC3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B05C789925FB46DE00587FC3 /* UIButton+SCToolExt.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03B3D4C259C860A00C877F9 /* SCButtonFactory.swift in Sources */,
+				B05C789A25FB46DE00587FC3 /* UIButton+SCToolExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
