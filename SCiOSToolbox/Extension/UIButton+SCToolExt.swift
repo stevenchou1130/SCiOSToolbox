@@ -7,9 +7,9 @@
 
 import UIKit
 
-@objc extension UIButton {
+@objc public extension UIButton {
     
-    open override var isHighlighted: Bool {
+    override var isHighlighted: Bool {
         get {
             return super.isHighlighted
         }
@@ -29,18 +29,18 @@ import UIKit
         }
     }
     
-    public func addHighlightAlphaEffect() {
+    func addHighlightAlphaEffect() {
         
     }
     
-    public func centerTextAndImage(spacing: CGFloat) {
+    func centerTextAndImage(spacing: CGFloat) {
         let insetAmount = spacing / 2
         self.imageEdgeInsets = UIEdgeInsets(top: 0, left: -insetAmount, bottom: 0, right: insetAmount)
         self.titleEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: -insetAmount)
         self.contentEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: insetAmount)
     }
     
-    public func alignTextBelow(spacing: CGFloat = 4.0) {
+    func alignTextBelow(spacing: CGFloat = 4.0) {
         guard let image = self.imageView?.image else {
             return
         }
