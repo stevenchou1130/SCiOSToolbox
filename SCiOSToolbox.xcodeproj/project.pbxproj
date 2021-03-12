@@ -10,6 +10,7 @@
 		B0054392258379C0005D71D4 /* SCiOSToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0054388258379C0005D71D4 /* SCiOSToolbox.framework */; };
 		B0054397258379C0005D71D4 /* SCiOSToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0054396258379C0005D71D4 /* SCiOSToolboxTests.swift */; };
 		B0054399258379C0005D71D4 /* SCiOSToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = B005438B258379C0005D71D4 /* SCiOSToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03B3D4C259C860A00C877F9 /* SCButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B0054391258379C0005D71D4 /* SCiOSToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCiOSToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0054396258379C0005D71D4 /* SCiOSToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCiOSToolboxTests.swift; sourceTree = "<group>"; };
 		B0054398258379C0005D71D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButtonFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B005438B258379C0005D71D4 /* SCiOSToolbox.h */,
+				B03B3D4B259C860A00C877F9 /* SCButtonFactory.swift */,
 				B005438C258379C0005D71D4 /* Info.plist */,
 			);
 			path = SCiOSToolbox;
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					B0054387258379C0005D71D4 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1230;
 					};
 					B0054390258379C0005D71D4 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03B3D4C259C860A00C877F9 /* SCButtonFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		B005439D258379C1005D71D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NPUGMWPVA6;
@@ -358,6 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		B005439E258379C1005D71D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NPUGMWPVA6;
@@ -391,6 +399,7 @@
 		B00543A0258379C1005D71D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V749RVLY6N;
 				INFOPLIST_FILE = SCiOSToolboxTests/Info.plist;
@@ -409,6 +418,7 @@
 		B00543A1258379C1005D71D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V749RVLY6N;
 				INFOPLIST_FILE = SCiOSToolboxTests/Info.plist;
