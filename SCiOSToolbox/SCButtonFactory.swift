@@ -14,11 +14,11 @@ import UIKit
     // MARK: - UI Content
     
     // MARK: - Initialization
-    init() {
+    public init() {
         
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("\(Self.self) init(coder:) has not been implemented")
     }
 }
