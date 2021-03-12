@@ -7,7 +7,7 @@
 
 import UIKit
 
-@objcMembers public class SCButtonFactory {
+@objcMembers open class SCButtonFactory {
     
     // MARK: - Property
 

@@ -29,18 +29,18 @@ import UIKit
         }
     }
     
-    func addHighlightAlphaEffect() {
+    public func addHighlightAlphaEffect() {
         
     }
     
-    func centerTextAndImage(spacing: CGFloat) {
+    public func centerTextAndImage(spacing: CGFloat) {
         let insetAmount = spacing / 2
         self.imageEdgeInsets = UIEdgeInsets(top: 0, left: -insetAmount, bottom: 0, right: insetAmount)
         self.titleEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: -insetAmount)
         self.contentEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: insetAmount)
     }
     
-    func alignTextBelow(spacing: CGFloat = 4.0) {
+    public func alignTextBelow(spacing: CGFloat = 4.0) {
         guard let image = self.imageView?.image else {
             return
         }
