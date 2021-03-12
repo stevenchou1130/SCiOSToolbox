@@ -26,9 +26,11 @@ import UIKit
 // MARK: - Public
 extension SCButtonFactory {
  
-    public func createButton() -> UIButton {
-        let b = UIButton(frame: .zero)
-        return b
+    public class func createButton(with title: String) -> UIButton {
+        let btn = UIButton(type: .custom)
+        btn.setTitle(title, for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        return btn
     }
 }
 
