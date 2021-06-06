@@ -11,4 +11,8 @@ target 'SCiOSToolbox' do
     # Pods for testing
   end
 
+  target 'Example' do
+    pod 'SnapKit', '~> 5.0.1'
+  end
+
 end
